@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Giggabike">
+  <meta name="theme-color" content="#000000">
+  <title>Giggabike</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game" width="384" height="216"></canvas>
+
+  <div id="touch" aria-hidden="true">
+    <div class="dpad">
+      <div class="btn d-up" data-btn="up">&#9650;</div>
+      <div class="btn d-left" data-btn="left">&#9664;</div>
+      <div class="btn d-right" data-btn="right">&#9654;</div>
+      <div class="btn d-down" data-btn="down">&#9660;</div>
+    </div>
+    <div class="abtns">
+      <div class="btn b-turbo" data-btn="turbo">TURBO</div>
+      <div class="btn b-go" data-btn="go">GO</div>
+    </div>
+    <div class="btn b-pause" data-btn="pause">II</div>
+  </div>
+
+  <div id="rotate">Turn your phone sideways to ride &#8635;</div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
